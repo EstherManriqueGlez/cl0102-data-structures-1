@@ -1,14 +1,14 @@
 const { Stack } = require('./classes/stack');
 const { Queue } = require('./classes/queue');
+const { textStack, textQueue } = require('./arts');
 
 const color = require('cli-color');
 
 const stack = new Stack();
 const queue = new Queue();
 
-
 // Stack
-//console.log(textStack);
+console.log(textStack);
 console.log(color.bgBlue('Printing array status'));
 console.log(stack.isEmpty() ? 'Is empty' : 'Is not empty');
 
@@ -36,7 +36,7 @@ console.log(color.bgYellow('Getting index of 20'));
 console.log(stack.search(20));
 
 // Queue
-//console.log(textQueue)
+console.log(textQueue)
 console.log(color.bgBlue('Printing queue status'));
 console.log(queue.isEmpty() ? 'Is empty' : 'Is not empty');
 
